@@ -7,10 +7,7 @@ import me.partlysunny.game.world.components.collision.TransformComponent;
 import me.partlysunny.game.world.components.player.PlayerCameraFollowComponent;
 import me.partlysunny.game.world.components.player.PlayerControlComponent;
 import me.partlysunny.game.world.components.player.state.StateComponent;
-import me.partlysunny.game.world.components.render.ActorComponent;
-import me.partlysunny.game.world.components.render.AnimationComponent;
-import me.partlysunny.game.world.components.render.TextureComponent;
-import me.partlysunny.game.world.components.render.TintComponent;
+import me.partlysunny.game.world.components.render.*;
 
 public final class Mappers {
 
@@ -24,4 +21,6 @@ public final class Mappers {
     public static final ComponentMapper<DeletionListenerComponent> deleteListenerMapper = ComponentMapper.getFor(DeletionListenerComponent.class);
     public static final ComponentMapper<PlayerControlComponent> controlMapper = ComponentMapper.getFor(PlayerControlComponent.class);
     public static final ComponentMapper<StateComponent> stateMapper = ComponentMapper.getFor(StateComponent.class);
+    public static final ComponentMapper<TextComponent> textMapper = ComponentMapper.getFor(TextComponent.class);
+    public static final ComponentMapper<ZComponent> zMapper = ComponentMapper.getFor(ZComponent.class);
 }
